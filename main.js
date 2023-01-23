@@ -40,36 +40,29 @@ function winnerAnouncer(human,computer){
 
 
 
-var human = 0;
-var computer = 0;
-function game(){
+// var human = 0;
+// var computer = 0;
+// function game(){
 
-    for (let i = 0; i < 5; i++) {
-        const playerSelection = prompt("Please enter your choice: ");
-        const computerSelection = getComputerChoice();
-        let result = playRound(playerSelection, computerSelection);
-        console.log(result);
+//     for (let i = 0; i < 5; i++) {
+//         const playerSelection = prompt("Please enter your choice: ");
+//         const computerSelection = getComputerChoice();
+//         let result = playRound(playerSelection, computerSelection);
+//         console.log(result);
 
-        if(result.includes("win!")) {
-            human = human + 1;
-            console.log(human);
-        }else if(result.includes("lose")){
-            computer = computer + 1;
-            console.log(computer);
-        }
+//         if(result.includes("win!")) {
+//             human = human + 1;
+//             console.log(human);
+//         }else if(result.includes("lose")){
+//             computer = computer + 1;
+//             console.log(computer);
+//         }
 
-    }
-    winnerAnouncer(human,computer);          
+//     }
+//     winnerAnouncer(human,computer);          
    
-}
+// }
 
 
-console.log(game());
-
-
-
-
-// const playerSelection = "Rock";
-// const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
+// console.log(game());
 
