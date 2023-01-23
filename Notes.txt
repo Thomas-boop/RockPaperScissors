@@ -1,0 +1,16 @@
+create a function that is called getcomputerchoice.
+it must randomly generaten 
+
+
+write a functions that plays a single round!
+it must take two parameters named (playerSelection) and (computerSelectio)
+it must return a string value that declares a winner
+like for example "You Lose! Paper beats Rock"
+
+
+
+
+Create three buttons, one for each selection.
+Add an event listener to the buttons that call 
+your playRound function with the correct playerSelection 
+every time a button is clicked. (you can keep the console.logs for this step)
