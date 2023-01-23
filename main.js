@@ -40,6 +40,35 @@ function winnerAnouncer(human,computer){
 
 
 
+let rockButton = document.querySelector(".rock");
+let paperButton = document.querySelector(".paper");
+let scissorsButton = document.querySelector(".scissors");
+
+rockButton.addEventListener('click', () => {
+    let computerSelection = getComputerChoice();
+    let result = playRound("rock", computerSelection);
+    console.log(result);
+
+  });
+
+paperButton.addEventListener('click', () => {
+    let computerSelection = getComputerChoice();
+    let result = playRound("paper", computerSelection);
+    console.log(result);
+
+});
+
+scissorsButton.addEventListener('click', () => {
+    let computerSelection = getComputerChoice();
+    let result = playRound("scissors", computerSelection);
+    console.log(result);
+
+  });
+
+ 
+
+
+
 // var human = 0;
 // var computer = 0;
 // function game(){
