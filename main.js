@@ -88,18 +88,30 @@ rockButton.addEventListener('click', () => {
         keepScore();
       }
 
-    }
-    winnerAnouncer(human,computer);          
-   
-}
+  });
 
+paperButton.addEventListener('click', () => {
+    let computerSelection = getComputerChoice();
+    updateMoves("Paper",computerSelection);
+    let result = playRound("paper", computerSelection);
+    showResult(result);
+    keepScore();
+    if (winnerAnouncer()) {
+        pScore = cScore = 0;
+        keepScore();
+      }
 
-console.log(game());
+});
 
-
-
-
-// const playerSelection = "Rock";
-// const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
+scissorsButton.addEventListener('click', () => {
+    let computerSelection = getComputerChoice();
+    updateMoves("Scissors",computerSelection);
+    let result = playRound("scissors", computerSelection);
+    showResult(result);
+    keepScore();
+    if (winnerAnouncer()) {
+        pScore = cScore = 0;
+        keepScore();
+      }
+  });
 
