@@ -19,7 +19,7 @@ The images are created by Cristiano Zoucas from Noun Project free of charge.
 
 ## LIVE PREVIEW
 
-(`https://thomas-boop.github.io/RockPaperScissors/`)
+- https://thomas-boop.github.io/RockPaperScissors/
 
 ## Installation
 
